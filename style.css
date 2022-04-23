@@ -1,0 +1,499 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,900;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* 1st Section */
+
+
+/* Nav Bar Container */
+nav {
+    width: 100%;
+    height:10vh;
+    /* background-color: rgb(14, 14, 89); */
+    background-color: #000341;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 600;
+    position: relative;
+    z-index: 100;
+    
+}
+.nav-container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#logo-img {
+    height: 70px;
+}
+.navigation{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options div span {
+    /* background-color: rgb(63, 233, 233); */
+    background: rgb(16,255,198);
+    background: linear-gradient(0deg, rgba(16,255,198,1) 0%, rgba(16,255,255,1) 100%);
+    padding: 0px 2px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #181818;
+    margin-left: 3px;
+}
+.options a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.user:hover {
+    cursor: pointer;
+}
+/* User Div */
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* Hamburger Menu Mobile View */
+.user .hamburger-menu {
+    display: none;
+    position: relative;
+}
+.user .mobile-menu {
+    display: none;
+}
+.mobile {
+    position: absolute;
+    height: 150px;
+    width: 175px;
+    background-color: #fff;
+    /* padding: 5px 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 25px;
+    right: -20px;
+    padding: 5px 10px;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    border-bottom: 1px solid rgb(187, 185, 185);
+    
+}
+.user .mobile-menu a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.user .mobile-menu span {
+    background: rgb(16,255,198);
+    background: linear-gradient(0deg, rgba(16,255,198,1) 0%, rgba(16,255,255,1) 100%);
+    padding: 0px 2px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #181818;
+}
+.hamburger-menu:hover .mobile-menu{
+    display: block;
+}
+
+
+
+
+
+
+/* pack-price-container */
+.pack-price-container {
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #000341 0%, #003380 100%), linear-gradient(180deg, #00011B 0%, #0C1B31 100%);
+    position: relative;
+
+}
+#pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.mini-container-1 {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+/* Range Slider */
+.bar {
+    width: 100%;
+    padding: 5px 15px;
+    position: relative;
+}
+.slider {
+    width: 100%;
+    height: 25px;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    outline: none; 
+    background-image: url("./images/Slider-4x.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    opacity: 0.7;
+    
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#floating-box{
+    position: absolute;
+    color: #000;
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: rgb(230, 230, 230);
+    padding: 2px 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+    
+}
+#floating-box h1 {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* Pack image and details */
+.pack-image-details {
+    width: 100%;
+    height: 80%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pack-image {
+    /* height: 500px; */
+    height: 95%;
+    margin-top: 25px;
+    
+}
+.pack-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* Pack order */
+.pack-order {
+    height: 100%;
+    min-width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;    
+}
+
+/* name and details */
+
+.upper-portion {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5px 25px;
+    margin-top: 25px;
+}
+.pack-name {
+    color: #fff;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 24px;
+    letter-spacing: 1px;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.pack-name h1 {
+    font-weight: 600;
+    
+}
+.pack-content {
+    height: 75%;
+    width: 100%;
+}
+.pack-content ul {
+    color: #fff;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 18px;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+
+
+/* Quantity and price */
+/* lower portion */
+.lower-portion {
+    height: 50%;
+    width: 100%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    flex-wrap: wrap;
+}
+
+.price h1 {
+    color: #fff;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 50px;
+}
+
+/* Quantity */
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#qty {
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+#qty:focus {
+    outline: none;
+}
+
+
+
+
+/* Buttons */
+.buttons {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.order-btn {
+    background: rgb(16,255,198);
+    background: linear-gradient(0deg, rgba(16,255,198,1) 0%, rgba(16,255,255,1) 100%);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 70px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.order-btn:hover {
+    cursor: pointer;
+}
+
+.arrow-btn {
+    background-color: #003380;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.arrow-btn:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* Media Queries */
+/* Nav bar */
+@media only screen and (max-width: 768px) {
+    /* Navbar */
+    .options div{
+        display: none;
+    }
+    .user .hamburger-menu {
+        display: block;
+        margin-left: 25px;
+    }
+
+
+    /* range slider */
+    #floating-box h1 {
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    #floating-box {
+        padding: 0 2px;
+    }
+
+    /* Price Container */
+    .pack-content ul{
+        font-size: 12px;
+    }
+
+    /* Price */
+    .price h1 {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    /* Quantity */
+    .quantity {
+        font-size: 16px;
+        margin-right: -5px;
+    }
+    #qty {
+        font-size: 16px;
+    }
+
+    /* price btn */
+    .order-btn {
+        font-size: 10px;
+        height: 40px;
+        width: 300px;
+        margin-right: 10px;
+        padding: 0;
+    }
+    .arrow-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* Slider */
+    .slider {
+        height: 18px;
+    }
+    .slider::-webkit-slider-thumb {
+        height: 16px;
+        width: 16px;
+
+    }
+
+
+    .price {
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 850px) {
+    .options div span {
+        font-size: 9px;
+    }
+
+    .pack-name h1 {
+        font-size: 22px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .pack-name h1 {
+        font-size: 16px;
+    }
+    .order-btn {
+        width: 350px;
+        font-size: 8px;
+    }
+    #qty {
+        font-size: 12px;
+    }
+
+}
+
+/* Remove all the font family and put it the unversal tag */
+
+
+/* 2nd Section */
