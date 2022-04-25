@@ -465,10 +465,12 @@ nav {
 
 }
 @media only screen and (max-width: 850px) {
+    /* Nav */
     .options div span {
         font-size: 9px;
     }
 
+    /* pack name */
     .pack-name h1 {
         font-size: 36px;
     }
@@ -476,6 +478,8 @@ nav {
 
 
 @media only screen and (max-width: 400px) {
+    /* Upper Container */
+    /* pack name and content */
     .pack-name h1 {
         font-size: 22px;
         padding: 10px;
@@ -484,6 +488,7 @@ nav {
         font-size: 6px;
         padding: 5px;
     }
+    /* Lower Container */
     .order-btn {
         width: 350px;
         font-size: 8px;
@@ -503,7 +508,7 @@ nav {
 
 @media only screen and (max-width: 1250px) {
 
-
+    /* PACK IAMGE */
     .pack-image-details {
         justify-content: center;
         width: 90vw;
@@ -511,6 +516,8 @@ nav {
     .pack-image {
         height: 50%;
     }
+
+    /* pack contents */
     .pack-order {
         height: 50%;
         width: 100%;
@@ -540,6 +547,7 @@ nav {
         font-size: 12px;
     }
 
+    /* Lower Container */
     .lower-portion {
         width: 100vw;
         height: 70%;

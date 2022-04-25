@@ -3,7 +3,7 @@
 .pack-details-1 {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(0, 9, 40);
+    background-color: rgb(0, 9, 40); 
 
 }
 .pack-details-container {
@@ -251,6 +251,17 @@
     display: none;
 }
 
+/* Footer graphics */
+.footer-graphics {
+    position: absolute;
+    right: 0;
+    top: -9.4vh;
+    height: 28vh;
+    margin-bottom: 0;
+}
+.footer-graphics img {
+    height: 100%;
+}
 
 
 
@@ -310,6 +321,11 @@
         display: block;
     }
 
+    /* Footer graphics */
+    .footer-graphics {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 1300px) {
@@ -347,6 +363,13 @@
     .footer {
         height: 15vh;
     }
+    
+    /* Footer graphics */
+    .footer-graphics {
+        height: 18vh;
+        top: -6vh;
+        right: 0;
+     }
     
     
 
